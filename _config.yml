@@ -1,8 +1,10 @@
 # Basic Site Settings
-title: Your Name
-description: Software Developer & Engineer # Appears under your name in sidebar
 logo: /assets/img/profile-pic.jpg # Path to your profile picture
-email: your.email@example.com
+title: Idriss Jama
+description: Security Analyst # Appears under your name in sidebar
+email: ijama575@gmail.com.com
+url: "https://Idro575/SOC"
+baseurl: ""
 
 # Theme Settings
 theme: jekyll-theme-minimal

@@ -1,5 +1,82 @@
-Title : Idriss Jama
-Logo : 
-Description : Cybersecurity Projects
-Theme : jerkyll-theme-minima
+# Basic Site Settings
+title: Your Name
+description: Software Developer & Engineer # Appears under your name in sidebar
+logo: /assets/img/profile-pic.jpg # Path to your profile picture
+email: your.email@example.com
 
+# Theme Settings
+theme: jekyll-theme-minimal
+show_downloads: false
+google_analytics: # Add your Google Analytics tracking ID (optional)
+
+# Social Media & Professional Links
+social_links:
+  github: yourusername
+  linkedin: yourusername
+  twitter: yourusername # optional
+  stackoverflow: youruserid # optional
+  dev: yourusername # optional
+  medium: yourusername # optional
+
+# Author Information
+author:
+  name: Your Full Name
+  bio: |
+    Software Developer with expertise in Python, JavaScript, and Cloud Technologies.
+    Currently working on projects involving AI and Web Development.
+    Open to collaboration and new opportunities.
+
+# Navigation Links (appears in sidebar)
+navigation:
+  - title: Home
+    url: /
+  - title: Projects
+    url: /projects
+  - title: Blog
+    url: /blog
+  - title: Resume
+    url: /resume
+  - title: Contact
+    url: /contact
+
+# Projects Collection Settings
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Default Settings for Pages
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Exclude Files from Processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - README.md
+  - LICENSE
